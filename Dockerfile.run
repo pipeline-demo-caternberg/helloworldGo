@@ -1,8 +1,10 @@
 
 FROM alpine:3.8
 ENV LAST_UPDATE=20180921
-LABEL authors="Joost van der Griendt <andreas.caternberg@gmail.com>"
+LABEL authors="caternberg <andreas.caternberg@gmail.com>"
 LABEL version="0.1.0"
-LABEL description="Docker image for CAT"
-ENTRYPOINT ["catz", "serve"]
-COPY ./cat.bin /usr/local/bin/catz
+LABEL description="Docker image for helloworld"
+ENTRYPOINT ["main", "serve"]
+COPY ./main /usr/local/bin/main
+
+
