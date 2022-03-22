@@ -46,7 +46,7 @@ spec:
                 PATH        = "/busybox:$PATH"
                 REGISTRY    = 'index.docker.io' // Configure your own registry
                 REPOSITORY  = 'caternberg'
-                IMAGE       = 'helloworldgolang'
+                IMAGE       = "helloworldgolang-${GIT_COMMIT}"
             }
             steps {
                 container(name: 'kaniko', shell: '/busybox/sh') {
