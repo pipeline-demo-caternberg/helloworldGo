@@ -29,5 +29,3 @@ Install binary
 ```bash
 go install
 ```
-
-
