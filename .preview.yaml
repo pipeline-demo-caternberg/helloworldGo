@@ -3,5 +3,5 @@ previews:
   - name: helloworldgolang
     container:
       image: index.docker.io/caternberg/helloworldgolang:${{env.commit.sha}}
-      port: 8080
+      port: 8666
 
