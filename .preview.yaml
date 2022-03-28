@@ -1,6 +1,6 @@
 apiVersion: 1.0.0
 previews:
-  - name: helloworldgolang
+  - name: default
     container:
       image: index.docker.io/caternberg/helloworldgolang:${{env.commit.sha}}
       port: 8666
